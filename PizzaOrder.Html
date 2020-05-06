@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Pizza Order Form</title>
+	    <meta charset="utf-8">
+	    <link rel="stylesheet" href=".css">
+    </head>
+    <body>
+        <h1>Pizza Order Menu</h1>
+	<br>
+	<br>
+	<div id="Name">
+		<label for="FLName">Name:</label>
+  		<input type="text" id="FLName" name="FLName"><br><br>
+	</div>
+
+	<br>
+	
+	<div id="sizetable">
+		<h3 class="tablehead">Select size*:</h3>
+		<div class="SizeSelector">	
+			<input type="radio" name="size" value="Small"> Small<br>
+			<input type="radio" name="size" value="Medium"> Medium<br>
+			<input type="radio" name="size" value="Large"> Large<br>
+		</div>
+	</div>
+
+<br>
+
+    <div id="meattable">
+		<h3 class="tablehead">What kind of Pizza do you want:</h3>
+		<div class="StyleSelector">
+			<input type="radio" name="meat" value="Pepperoni"> Pepperoni<br>
+			<input type="radio" name="meat" value="Sausage"> Sausage<br>
+			<input type="radio" name="meat" value="Canadian Bacon"> Canadian Bacon<br>
+			<input type="radio" name="meat" value="Ground Beef"> Ground Beef<br>
+		</div>
+	</div>
+
+    <br>
+	<br>
+	<button id="calc" type="submit" onclick="invoice()">Submit order</button>
+	<br><br>
+	
+    <div id="bill"> 
+		<p id="name"></p><br>
+		<p>Size:</p><input type="text" id="PizzaSize"><br>
+		<p>Style:</p><input type="text" id="style"><br>
+		<p>Total:</p><input type="text" id="total"><br>
+	</div>
+            
+
+
+            <script src="PizzaMenu.js"></script>
+    </body>
+</html>
